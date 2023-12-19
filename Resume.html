@@ -343,42 +343,52 @@
             text-shadow: 1px 1px 2px #000, 0 0 1em #8B4513, 0 0 0.2em #c48f5a;
             top: 2.5%;
         }
-        }
+}
     </style>
     <script>
-        function objectives() {
-          var objectivetext = document.getElementById("displayText");
-          if (objectivetext.style.display === "none") {
-            objectivetext.style.display = "block";
-          } else {
-            objectivetext.style.display = "none";
-          }
-        }
+         function objectives() {
+	    var objectivetext = document.getElementById("displayText");
+	    var style = window.getComputedStyle(objectivetext);
+	
+	    if (style.display === "none") {
+	        objectivetext.style.display = "block";
+	    } else {
+	        objectivetext.style.display = "none";
+	    }
+	}
 
-        function education() {
-          var educationText = document.getElementById("anotherDisplayText");
-          if (educationText.style.display === "none") {
-            educationText.style.display = "block";
-          } else {
-            educationText.style.display = "none";
-          }
-        }
-        function skills() {
-          var skillsText = document.getElementById("skillsDisplayText");
-          if (skillsText.style.display === "none") {
-            skillsText.style.display = "block";
-          } else {
-            skillsText.style.display = "none";
-          }
-        }
-        function experiences() {
-            var experiencesText = document.getElementById("experiencesDisplayText");
-            if (experiencesText.style.display === "none") {
-                experiencesText.style.display = "block";
-            } else {
-                experiencesText.style.display = "none";
-            }
-        }
+	function education() {
+	    var educationText = document.getElementById("anotherDisplayText");
+	    var style = window.getComputedStyle(educationText);
+	
+	    if (style.display === "none") {
+	        educationText.style.display = "block";
+	    } else {
+	        educationText.style.display = "none";
+	    }
+	}
+	
+	function skills() {
+	    var skillsText = document.getElementById("skillsDisplayText");
+	    var style = window.getComputedStyle(skillsText);
+	
+	    if (style.display === "none") {
+	        skillsText.style.display = "block";
+	    } else {
+	        skillsText.style.display = "none";
+	    }
+	}
+	
+	function experiences() {
+	    var experiencesText = document.getElementById("experiencesDisplayText");
+	    var style = window.getComputedStyle(experiencesText);
+	
+	    if (style.display === "none") {
+	        experiencesText.style.display = "block";
+	    } else {
+	        experiencesText.style.display = "none";
+	    }
+	}
     </script>
 </head>
 <body>
